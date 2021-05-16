@@ -4,6 +4,10 @@ html {
     --default-horizontal-margin: 1em;
 }
 
+body {
+    margin: 0;
+}
+
 .flex {
     display: flex;
 }
@@ -33,16 +37,31 @@ html {
     justify-content: space-evenly;   
 }
 
+.caixa-form input{
+    border-radius: 10px;
+    border-style: none;
+    height: 3em;
+    width: 32em;  
+}
+
+.default-margin-right video{
+    width: 35em;
+    height: 18em;
+}
+
 .formulario {
     align-items: center;
     justify-content: space-around;
     background-color: #E12C30;
+    height: 25em;
 }
 
 .botao {
     color: #FFFFFF;
     background: linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
-    border-radius: 50px;    
+    border-radius: 30px;
+    text-align: center;  
+    width: 27em;  
 }
 
 .caixa {
@@ -55,7 +74,8 @@ html {
 
 #caixa-login-form {
     padding: 2em;
-    width: 20em;    
+    width: 20em;
+    border-radius: 24px;    
 }
 
 .default-margin-right {
@@ -72,6 +92,7 @@ html {
 
 .width-full {
     width: 100%;
+    justify-content: space-evenly;
 }
 
 #header-div {
