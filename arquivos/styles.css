@@ -17,3 +17,55 @@
 .flex-space-between {
     justify-content: space-between;
 }
+
+.flex-center {
+    justify-content: center;
+}
+
+.caixa-form {
+    flex-direction: column;
+    justify-content: space-evenly;   
+}
+
+.formulario {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E12C30;
+}
+
+.botao {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
+    border-radius: 50px;    
+}
+
+.caixa {
+    background-color: #CE282B;
+}
+
+#login-form {
+    height: 60%;
+}
+
+#caixa-login-form {
+    padding: 2em;
+    width: 20em;    
+}
+
+.default-margin-right {
+    margin-right: 0.5em;
+}
+
+.default-margin-left {
+    margin-left: 0.5em;
+}
+
+.default-padding {
+    padding: 1em;
+}
+
+.width-full {
+    width: 100%;
+}
+
+

@@ -39,16 +39,22 @@
         </div>
     </header>
     <body>  
-        <section id="formulario">
-            <video width="320" height="240" controls></video>
-            <form action="">
-                <label for="nome">Informe seu nome</label>
-                <input type="text" id="nome" name="nome" value="">
-                <label for="email">informe seu meu</label>
-                <input type="text" id="email" name="email" value="">
-            </form>
-            <div class="botao-form">
-                <p>Sim, quero ser um afiliado</p>
+        <section class="formulario flex">
+            <div class="flex default-padding flex-center width-full">
+                <div class="flex default-margin-right">
+                    <video width="320" height="240" controls></video>
+                </div>
+                <div id="caixa-login-form" class="flex caixa default-margin-left flex-column">
+                    <form id="login-form" action="" class="caixa-form flex">
+                        <label for="nome"></label>
+                        <input type="text" id="nome" name="nome" value="" placeholder="Informe seu nome">
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" value="" placeholder="informe seu email">
+                    </form>
+                    <div class="botao">
+                        <p>Sim, quero ser um afiliado</p>
+                    </div>
+                </div>
             </div>
         </section>
         <article>
