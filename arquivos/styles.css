@@ -2,6 +2,7 @@ html {
     --default-header-padding: 5em;
     --default-conatiner-padding: 10em;
     --default-horizontal-margin: 1em;
+    --default-vertical-margin: 1em;
     --default-red-color: #E12C30;
     --default-chip-size: 3em;
     --default-chip-panel-background-color: #F9F9F9;
@@ -35,6 +36,10 @@ body {
 
 .flex-center {
     justify-content: center;
+}
+
+.flex-shrink {
+    flex-shrink: 2;
 }
 
 .caixa-form {
@@ -83,7 +88,7 @@ footer .botao > h2 {
 }
 
 .caixa {
-    background-color: green;;
+    background-color: #CE282B;
 }
 
 #login-form {
@@ -110,6 +115,10 @@ footer .botao > h2 {
     margin: auto;
 }
 
+.default-vertical-margin {
+    margin: var(--default-vertical-margin) 0;
+}
+
 .default-margin-right {
     margin-right: var(--default-horizontal-margin);
 }
@@ -124,7 +133,6 @@ footer .botao > h2 {
 
 .width-full {
     width: 100%;
-    justify-content: left;
 }
 
 #header-div {
