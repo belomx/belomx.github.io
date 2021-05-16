@@ -92,6 +92,10 @@ strong {
     height: min-content;
 }
 
+#submit {
+    cursor: pointer;
+}
+
 footer > .botao {
     width: 50%;
     margin: 0 auto;    
