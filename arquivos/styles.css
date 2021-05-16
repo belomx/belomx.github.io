@@ -1,3 +1,8 @@
+html {
+    --default-header-padding: 5em;
+    --default-conatiner-padding: 10em;
+}
+
 .flex {
     display: flex;
 }
@@ -68,4 +73,23 @@
     width: 100%;
 }
 
+#header-div {
+    background-image: url('../assets/images/carros_avenida.png');
+}
 
+.default-margin-horizontal {
+    margin: 0 1em;
+}
+
+.default-padding-bottom {
+    padding-bottom: var(--default-header-padding);
+}
+
+.default-padding-top {
+    padding-top: var(--default-header-padding);
+}
+
+.container-div-padding {
+    padding-left: var(--default-conatiner-padding);
+    padding-right: var(--default-conatiner-padding);
+}
