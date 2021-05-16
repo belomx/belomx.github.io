@@ -50,6 +50,7 @@ body {
 .default-margin-right video {
     width: 35em;
     height: 18em;
+    background-color: black;
 }
 
 .formulario {
@@ -78,6 +79,10 @@ body {
 #login-form {
     height: 60%;
     width: 100%;
+}
+
+#login-form > input {
+    padding-left: 1em;
 }
 
 #caixa-login-form {
