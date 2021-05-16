@@ -11,11 +11,10 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    /*width: min-content;*/
 }
 
-h2 {
-    text-align: center;
+strong {
+    font-weight: bolder;
 }
 
 .flex {
@@ -56,12 +55,6 @@ h2 {
 
 .flex-grow {
     flex-grow: 2;
-}
-
-@media only screen and (max-width: 600px) {
-    .flex-responsive-element {
-        flex-direction: column;
-    }
 }
 
 .caixa-form {
@@ -194,13 +187,6 @@ footer .botao > h2 {
     padding: 1em;
     align-items: center;
     justify-content: space-around;
-    /*width: 25em;*/
-}
-
-@media only screen and (max-width: 600px) {
-    .icon-chip-panel {
-        flex-direction: column;
-    }
 }
 
 .icon-chip-panel > p {
@@ -224,11 +210,51 @@ footer .botao > h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .secao {
     background-color: #E12C30;
     color:#FFFFFF;
     align-items: center;
 }
 
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    h1, h2 {
+        text-align: center;
+    }
 
+    img {
+        height: 20em;
+    }
 
+    #header-div {
+        flex-direction: column-reverse;
+    }
+
+    .reponsive-botao-order-1 {
+        order: 1;
+    }
+
+    .default-padding-bottom {
+        padding-bottom: var(--default-header-padding);
+    }
+
+    .primeira-secao {
+        flex-direction: column;
+    }
+
+    .segunda-secao {
+        flex-direction: column;
+    }
+
+    .flex-responsive-element {
+        flex-direction: column;
+    }
+
+    .icon-chip-panel {
+        flex-direction: column;
+    }
+
+    .icon-chip-panel > p {
+        text-align: center;
+    }
+}
