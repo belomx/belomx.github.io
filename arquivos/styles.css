@@ -1,6 +1,7 @@
 html {
     --default-header-padding: 5em;
     --default-conatiner-padding: 10em;
+    --default-horizontal-margin: 1em;
 }
 
 .flex {
@@ -58,11 +59,11 @@ html {
 }
 
 .default-margin-right {
-    margin-right: 0.5em;
+    margin-right: var(--default-horizontal-margin);
 }
 
 .default-margin-left {
-    margin-left: 0.5em;
+    margin-left: var(--default-horizontal-margin);
 }
 
 .default-padding {
@@ -78,11 +79,11 @@ html {
 }
 
 .default-margin-horizontal {
-    margin: 0 1em;
+    margin: 0 var(--default-horizontal-margin);
 }
 
 .default-padding-bottom {
-    padding-bottom: var(--default-header-padding);
+    padding-bottom: calc(2 * var(--default-header-padding));
 }
 
 .default-padding-top {
