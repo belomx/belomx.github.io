@@ -167,7 +167,8 @@ body {
 }
 
 .flex > .icon-chip-panel {
-    margin: 1em 0;
+    margin: 1em;
+    flex-grow: 2;
 }
 
 .icon-chip-container {
