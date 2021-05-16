@@ -2,10 +2,14 @@ html {
     --default-header-padding: 5em;
     --default-conatiner-padding: 10em;
     --default-horizontal-margin: 1em;
+    --default-red-color: #E12C30;
+    --default-chip-size: 3em;
+    --default-chip-panel-background-color: #F9F9F9;
 }
 
 body {
     margin: 0;
+    width: min-content;
 }
 
 .flex {
@@ -52,7 +56,7 @@ body {
 .formulario {
     align-items: center;
     justify-content: space-around;
-    background-color: #E12C30;
+    background-color: var(--default-red-color);
     height: 25em;
 }
 
@@ -114,4 +118,46 @@ body {
 .container-div-padding {
     padding-left: var(--default-conatiner-padding);
     padding-right: var(--default-conatiner-padding);
+}
+
+.icon-chip {
+    background-color: var(--default-red-color);    
+    height: var(--default-chip-size);
+    width: var(--default-chip-size);
+    border-radius: 100%;
+    padding: 1em;
+}
+
+.icon-chip-image {
+    height: var(--default-chip-size);
+    width: var(--default-chip-size);
+}
+
+.icon-chip-panel {
+    background-color: var(--default-chip-panel-background-color);
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around;
+    width: 25em;
+}
+
+.icon-chip-panel > p {
+    width: 15em;
+}
+
+.icon-chip-panel div:first-child {
+    margin-right: var(--default-horizontal-margin);
+}
+
+.icon-chip-panel div:last-child {
+    margin-left: var(--default-horizontal-margin);
+}
+
+.flex > .icon-chip-panel {
+    margin: 1em 0;
+}
+
+.icon-chip-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
