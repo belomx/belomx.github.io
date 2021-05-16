@@ -14,8 +14,16 @@ body {
     /*width: min-content;*/
 }
 
+h2 {
+    text-align: center;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-row {
@@ -34,12 +42,26 @@ body {
     justify-content: space-between;
 }
 
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
 .flex-center {
     justify-content: center;
 }
 
 .flex-shrink {
     flex-shrink: 2;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-responsive-element {
+        flex-direction: column;
+    }
 }
 
 .caixa-form {
@@ -63,7 +85,6 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: var(--default-red-color);
-    height: 25em;
 }
 
 .botao {
@@ -102,7 +123,6 @@ footer .botao > h2 {
 
 #caixa-login-form {
     padding: 2em;
-    margin-left: 5em;
     width: 30em;
     border-radius: 24px;
 }   
@@ -174,7 +194,13 @@ footer .botao > h2 {
     padding: 1em;
     align-items: center;
     justify-content: space-around;
-    width: 25em;
+    /*width: 25em;*/
+}
+
+@media only screen and (max-width: 600px) {
+    .icon-chip-panel {
+        flex-direction: column;
+    }
 }
 
 .icon-chip-panel > p {
@@ -202,7 +228,6 @@ footer .botao > h2 {
     background-color: #E12C30;
     color:#FFFFFF;
     align-items: center;
-    height: 30em;
 }
 
 
